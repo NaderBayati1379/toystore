@@ -1,0 +1,77 @@
+
+
+
+@import '../../../../../const/_const';
+@import '../../../../../mixin/_mixin';
+
+.supportSection {
+  &__img {
+    width: 100%;
+    height: 100%;
+
+    img {
+
+
+      @include small {
+
+        width: 100%;
+        height: 100%;
+        display: block;
+
+      }
+
+      @include medium {
+        width: 100%;
+        height: 100%;
+        display: block;
+      }
+
+      @include large {
+        width: 100%;
+        height: 100%;
+      }
+
+
+    }
+  }
+
+  &__callToAction {
+    box-sizing: border-box;
+    padding-top: 100px;
+
+    h1 {
+      font-size: 60px;
+    }
+
+    span {
+      font-size: 20px;
+    }
+
+    &-btnsearch {
+      box-sizing: border-box;
+      padding-top: 50px;
+
+      input[type=search] {
+        width: 100% !important;
+        height: 60px !important;
+        border-radius: 15px !important;
+        border: none;
+        background-color: $bg-search;
+        text-align: left;
+        font-size: 10px !important;
+        padding-left: 15px;
+
+      }
+
+
+    }
+
+    &-callback {
+      position: absolute;
+      height: 60px;
+      width: 120px;
+      font-size: 14px !important;
+      border-radius: 10px !important;
+    }
+  }
+}

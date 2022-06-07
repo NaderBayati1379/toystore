@@ -1,5 +1,5 @@
 import {Card, CardImg} from "react-bootstrap";
-import '../Pages/AppCuntent/AgeCategorySection/cuntent__sass/__cuntent.scss';
+import '../../Pages/AppCuntent/AgeCategorySection/AgeCategory__sass/ageCategory.scss';
 
 const CardComponent = ({item}) => {
 

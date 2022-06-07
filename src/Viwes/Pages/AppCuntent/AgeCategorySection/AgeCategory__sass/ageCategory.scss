@@ -1,0 +1,63 @@
+
+@import "../../../../../const/_const";
+@import "../../../../../mixin/_mixin";
+
+.ageCategory {
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  @include  xs{
+    transform: translateY(5%);
+  }
+  @include small{
+      transform: translateY(5%);
+  }
+  @include medium{
+    transform: translateY(5%);
+  }
+  @include large{
+    transform: translateY(-50%);
+  }
+
+  &__content {
+
+    box-sizing: border-box;
+    padding-top: 10px;
+    border: 2px solid $pink-color  !important;
+    text-align: center;
+    border-radius: 30px !important;
+      img{
+        max-width: 120px;
+        margin: 0 auto;
+      }
+
+    &-roundedimg{
+      border-top-left-radius: 100px !important;
+      border-top-right-radius: 100px !important;
+      border-bottom-left-radius: 100px !important;
+      border-bottom-right-radius: 100px !important;
+
+
+      //@include small {
+      //    border-bottom-left-radius: 70px;
+      //    border-bottom-right-radius: 70px;
+      //    border-top-left-radius: 70px !important;
+      //    border-top-right-radius: 70px !important;
+      //}
+    }
+
+    &-rang {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    &-years {
+      color: $secondary-color;
+      font-size: 12px;
+      font-weight: bold;
+    }
+  }
+
+}

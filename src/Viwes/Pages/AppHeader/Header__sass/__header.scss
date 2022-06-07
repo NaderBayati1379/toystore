@@ -1,0 +1,217 @@
+@import '../../../../const/_const';
+@import '../../../../mixin/_mixin';
+
+/*Start Style Css Header*/
+.header {
+  width: 100%;
+  height: 850px;
+  background-color: $pink-color;
+
+  @include small {
+
+    height: 800px;
+  }
+  @include medium{
+    height: auto;
+  }
+  @include large {
+    height: 850px;
+  }
+
+  &__container {
+    max-width: 1290px !important;
+    margin: 0 auto;
+
+  }
+
+  &__navbar {
+    max-width: 1290px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+
+
+  }
+
+
+
+  &__icon {
+    direction: ltr !important;
+
+
+    i {
+
+      font-size: 20px !important;
+      color: $white-color;
+      direction: ltr;
+    }
+
+
+  }
+.ltr{
+  direction: ltr !important;
+}
+
+
+
+  &__logo {
+    color: $white-color;
+    font-weight: bold;
+    font-size: $size40;
+
+    @include small {
+      font-size: $size16;
+    }
+  @include  medium{
+    font-size:$size20 ;
+  }
+    @include large {
+
+      font-size: $size40 !important;
+    }
+  }
+
+  &__image {
+    height: 600px;
+    max-width: 600px;
+    @include xs{
+      height: 410px;
+    }
+    @include small {
+      max-width: 400px;
+      height: 400px;
+      margin: 0 auto;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    @include large {
+      height: 600px;
+      max-width: 600px;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  &__description {
+    height: 500px;
+    display: grid;
+    box-sizing: border-box;
+
+    text-align: end;
+    @include xs{
+      padding-top: 1rem;
+      max-width: 650px;
+      height: 350px;
+      font-size: $size10;
+    }
+    @include small {
+      padding-top: 1rem;
+      max-width: 650px;
+      height: 250px;
+      font-size: $size10;
+    }
+
+    @include medium {
+      padding-top: 0px;
+      max-width:100%;
+      height: 350px;
+      font-size: $size12;
+    }
+
+    @include large {
+      padding-top: 3rem;
+      max-width: 100%;
+      height: 500px;
+    }
+
+    &-title {
+      color: $white-color;
+      font-size: 60px;
+      font-weight: bolder;
+@include xs{
+  font-size: 30px;
+}
+      @include small {
+        font-size: 40px;
+
+
+      }
+      @include medium{
+        font-size: 40px;
+      }
+      @include large {
+        font-size: 60px;
+
+
+      }
+    }
+
+    &-content {
+      color: $white-color;
+      font-size: $size20;
+      @include xs{
+        font-size: 14px;
+        padding-top:10px;
+      }
+      @include small {
+        font-size: 16px;
+        padding-top: 10px;
+
+      }
+
+      @include large {
+        font-size: 20px;
+        padding: 0;
+      }
+
+
+
+    }
+
+    &-btn {
+
+      button {
+        width: 150px;
+        height: 60px;
+        color: $pink-color;
+        border-radius: 15px;
+        letter-spacing: 2px;
+        font-weight: 600;
+        @include xs{
+          width: 120px;
+          height: 40px;
+
+        }
+        @include small {
+          width:100px ;
+          height: 40px;
+          font-size: 12px;
+          font-weight:200 ;
+        }
+        @include  medium{
+          width: 120px;
+          height: 50px;
+          font-size: 14px;
+          font-weight:400 ;
+        }
+
+        @include large {
+          font-size: 16px;
+          font-weight:600 ;
+          width: 150px;
+          color: $pink-color;
+
+
+        }
+      }
+    }
+  }
+}
+
+/*end style header*/

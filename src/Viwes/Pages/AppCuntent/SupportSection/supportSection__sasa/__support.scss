@@ -1,55 +1,58 @@
-
-
-
 @import '../../../../../const/_const';
 @import '../../../../../mixin/_mixin';
 
 .supportSection {
+
   &__img {
-    width: 100%;
-    height: 100%;
-
-    img {
-
-
-      @include small {
-
-        width: 100%;
-        height: 100%;
-        display: block;
-
-      }
-
-      @include medium {
-        width: 100%;
-        height: 100%;
-        display: block;
-      }
-
-      @include large {
-        width: 100%;
-        height: 100%;
-      }
-
-
+    width: 558px;
+    height: 713px;
+    img{
+      width: 100%;
+      height: 100%;
     }
   }
 
   &__callToAction {
     box-sizing: border-box;
-    padding-top: 100px;
+
+    text-align: end;
+
 
     h1 {
-      font-size: 60px;
+
+      @include xs {
+        font-size: 30px;
+      }
+      @include small {
+        font-size: 50px;
+      }
+      @include medium {
+        font-size: 50px;
+      }
+      @include large {
+        font-size: 60px;
+      }
     }
 
     span {
-      font-size: 20px;
+
+      @include xs {
+        font-size: 12px;
+      }
+      @include small {
+        font-size: 14px;
+      }
+      @include medium {
+        font-size: 18px;
+      }
+      @include large {
+        font-size: 20px;
+      }
     }
 
     &-btnsearch {
       box-sizing: border-box;
-      padding-top: 50px;
+      padding-top: 60px;
 
       input[type=search] {
         width: 100% !important;
@@ -73,5 +76,14 @@
       font-size: 14px !important;
       border-radius: 10px !important;
     }
+  }
+}
+
+.containerStyle {
+  @include medium {
+    max-width: 920px !important;
+  }
+  @include large {
+    max-width: 1320px !important;
   }
 }

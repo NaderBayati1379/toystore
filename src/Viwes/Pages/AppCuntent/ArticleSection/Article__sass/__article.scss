@@ -1,0 +1,69 @@
+@import '../../../../../const/_const';
+@import '../../../../../mixin/_mixin';
+
+
+.articleSection {
+
+  &__img {
+
+    border: none !important;
+
+    width: 478px;
+    height: 558px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+  &__imgoverly {
+    width: 478px;
+    height: 558px;
+
+    img {
+      border: none !important;
+      width: 100%;
+      height: 100%;
+
+    }
+  }
+
+  &__chevron {
+    padding-top: 100px;
+
+    &-btnRight {
+      margin-left: 10px;
+      border-radius: 50px !important;
+    }
+
+    &-btnLeft {
+      border-radius: 50px !important;
+    }
+  }
+
+  &__Text {
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+    padding-top: 50px;
+    text-align: end;
+
+    h1 {
+      font-size: 60px;
+      padding-bottom: 50px;
+    }
+
+    span {
+
+      font-size: 22px;
+      color: #8AA4AA;
+
+    }
+
+  }
+
+  &__swiper {
+    height: 600px;
+  }
+}

@@ -1,0 +1,98 @@
+
+
+@import '../../../../../const/_const';
+
+@import '../../../../../mixin/_mixin';
+
+.offerSection {
+  &__title {
+    @include xs{
+      text-align: center;
+    }
+    @include small {
+      text-align: center;
+    }
+
+    @include large {
+      text-align: left;
+    }
+  }
+
+  .swiper {
+    margin-top: 50px;
+    height: 420px;
+    border-radius: 30px;
+  }
+
+  .product {
+    align-items: center;
+    border: none !important;
+    background-color: none !important;
+
+    &__main {
+
+      box-shadow: 2px 2px 2px 2px #e4dddf;
+      border-radius: 30px;
+
+      &-image {
+        width: 250px;
+        align-items: center;
+
+        img {
+          width: 100%;
+          padding: 25px;
+        }
+
+        border: none !important;
+      }
+
+      &-about {
+
+        font-size: 12px;
+        color: #211f1f;
+      }
+    }
+
+    &__footer {
+      &-rowstyle{
+
+        align-items: center;
+        padding-top: 20px;
+      }
+      &-plusbtn {
+
+        font-size: 14px;
+
+        button {
+
+          padding: 0px 4px;
+        }
+      }
+
+      &-reng {
+
+        width: 50px;
+        border-radius: 50px !important;
+        font-size: 10px !important;
+      }
+
+      &-price {
+        font-weight: bold;
+        padding: 0;
+
+      }
+
+
+    }
+  }
+
+  .chevron {
+    text-align: center;
+
+    &__right,
+    &__left {
+      border-radius: 80px !important;
+      font-size: 10px !important;
+    }
+  }
+}
